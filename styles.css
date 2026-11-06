@@ -47,7 +47,7 @@ h2 {
   padding-bottom: 0.4rem;
 }
 
-/* Style 5: Main content */
+/* Style 5: Main content - fluid layout */
 main {
   width: 85%;
   max-width: 65rem;
@@ -56,6 +56,7 @@ main {
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
 /* Style 6: Images */
@@ -89,7 +90,6 @@ p {
   main {
     width: 90%;
     padding: 1rem;
-    box-sizing: border-box;
   }
 
   nav ul {
@@ -102,3 +102,101 @@ p {
   }
 }
 
+/* HOME PAGE STYLES */
+
+/* Style 11: Home page heading */
+body.home h1 {
+  font-family: Georgia, serif;
+  letter-spacing: 1px;
+}
+
+/* Style 12: Home page sections */
+body.home h2 {
+  background-color: #fff0df;
+  padding: 0.6rem;
+  border-radius: 6px;
+}
+
+/* Style 13: Home page images */
+body.home img {
+  border: 4px solid #d9a679;
+}
+
+/* Style 14: Home page paragraphs */
+body.home p {
+  text-align: justify;
+}
+
+/* Style 15: Home page lists */
+body.home ul {
+  color: #754c38;
+}
+
+/* RESUME PAGE STYLES */
+
+/* Style 16: Resume fixed-width layout */
+body.resume main {
+  width: 800px;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+/* Style 17: Resume heading */
+body.resume h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Style 18: Resume section headings */
+body.resume h2 {
+  background-color: #e9e1da;
+  padding: 0.5rem;
+}
+
+/* Style 19: Resume job headings */
+body.resume h3 {
+  color: #8b5e3c;
+}
+
+/* Style 20: Resume lists */
+body.resume li {
+  margin-bottom: 0.4rem;
+}
+
+/* PERSONAL PAGE STYLES */
+
+/* Style 21: Personal page heading */
+body.personal h1 {
+  font-family: Georgia, serif;
+  color: #8b5e83;
+}
+
+/* Style 22: Personal page sections */
+body.personal h2 {
+  border-bottom: 3px solid #c9a2c0;
+}
+
+/* Style 23: Personal page images */
+body.personal img {
+  border: 4px solid #c9a2c0;
+}
+
+/* Style 24: Personal page paragraphs */
+body.personal p {
+  text-align: justify;
+}
+
+/* Style 25: Personal page lists */
+body.personal ul {
+  background-color: #f8edf5;
+  padding: 1.5rem 2.5rem;
+  border-radius: 8px;
+}
+
+/* Style 26: Resume mobile adjustment */
+@media screen and (max-width: 850px) {
+  body.resume main {
+    width: 90%;
+    max-width: 90%;
+  }
+}
