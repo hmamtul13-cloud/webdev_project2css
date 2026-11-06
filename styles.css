@@ -1,1 +1,104 @@
 
+/* Style 1: Overall page appearance */
+body {
+  background-color: #fff8f0;
+  color: #40352f;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Style 2: Main navigation */
+nav {
+  background-color: #754c38;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffd6a5;
+}
+
+/* Style 3: Main heading */
+h1 {
+  color: #9b5d38;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+/* Style 4: Section headings */
+h2 {
+  color: #754c38;
+  border-bottom: 2px solid #d9a679;
+  padding-bottom: 0.4rem;
+}
+
+/* Style 5: Main content */
+main {
+  width: 85%;
+  max-width: 65rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style 6: Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+}
+
+/* Style 7: Lists */
+li {
+  padding: 0.3rem;
+}
+
+/* Style 8: Video */
+iframe {
+  display: block;
+  max-width: 100%;
+  margin: 1.5rem auto;
+}
+
+/* Style 9: Paragraphs */
+p {
+  font-size: 1rem;
+}
+
+/* Style 10: Mobile layout */
+@media screen and (max-width: 600px) {
+  main {
+    width: 90%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+
