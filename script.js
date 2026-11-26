@@ -1,30 +1,34 @@
 
 "use strict";
 
+// Questions button and Google Maps loading
 document.addEventListener("DOMContentLoaded", function () {
 
-  // Questions button
   const questionsButton = document.getElementById("questionsButton");
 
   if (questionsButton) {
     questionsButton.addEventListener("click", function () {
-      alert("If you have questions, contact me at:\nhmohammed7@hawk.illinoistech.edu");
+      alert(
+        "If you have questions, contact me at:\n" +
+        "hmohammed7@hawk.illinoistech.edu"
+      );
     });
   }
 
-  // Load Google Maps on the map page
   const mapElement = document.getElementById("map");
 
   if (mapElement) {
+
     const googleScript = document.createElement("script");
 
-   googleScript.src =
-  "https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap&loading=async";
+    googleScript.src =
+      "https://maps.googleapis.com/maps/api/js?keyAIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap&callback=initMap&loading=async";
 
     googleScript.async = true;
 
     googleScript.onerror = function () {
-      mapElement.textContent = "Google Maps could not load.";
+      mapElement.textContent =
+        "Google Maps failed to load. Check your API key and internet connection.";
     };
 
     document.head.appendChild(googleScript);
@@ -32,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+// Initialize Google Map
 function initMap() {
 
   const mapElement = document.getElementById("map");
@@ -40,17 +45,13 @@ function initMap() {
     return;
   }
 
-  // Feature 1: Interactive map
   const map = new google.maps.Map(mapElement, {
     center: { lat: 40.7580, lng: -73.9855 },
     zoom: 12,
-
-    // Feature 2: Map and satellite controls
     mapTypeControl: true,
     mapTypeId: "roadmap"
   });
 
-  // Feature 3: Three clickable markers and information windows
   const locations = [
     {
       name: "Times Square",
@@ -65,7 +66,7 @@ function initMap() {
     {
       name: "Central Park",
       position: { lat: 40.7829, lng: -73.9654 },
-      description: "A beautiful park in the heart of Manhattan."
+      description: "A beautiful park in Manhattan."
     }
   ];
 
